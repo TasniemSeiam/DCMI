@@ -1,0 +1,153 @@
+/*left side */
+.sliderYellowShadow {
+  left: -50px;
+  top: 0%;
+  z-index: -1;
+}
+.sliderRedShadow {
+  left: -30%;
+  bottom: -30%;
+}
+.sliderBlueShadow {
+  left: -40%;
+  top: -10%;
+}
+
+.sliderContentShape {
+  top: 190px;
+  right: 80px;
+}
+/*shape img animation*/
+@keyframes anim-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shapeUpDownAnimation {
+  animation: anim-up-down 5s infinite;
+}
+.home h1 {
+  font-size: 9rem;
+  color:var(--gray-color);
+  font-weight: 700;
+}
+.home p {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+/*style right side*/
+.rightSide {
+  height: 100vh;
+  background: url("../../assets/images/slider/slider-img.jpg") no-repeat center;
+  background-size: cover;
+  border-bottom-left-radius: 15px;
+}
+/* style and animate button */
+.btn {
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  top: 1.3em;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 92%;
+  background-color: #f8f6f649;
+  top: 50%;
+  left: 40%;
+  transform: skewX(30deg) translate(-270%, -50%);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn:hover::before {
+  transform: skewX(30deg) translate(300%, -50%);
+  transition-delay: 0.1s;
+}
+
+/******* responsive ********************************/
+
+@media screen and (max-width: 920px) {
+  .home h1 {
+    font-size: 7.2rem;
+  }
+  .home p {
+    font-size: 1.75rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .sliderContentShape {
+    top: 80px;
+    right: 25px;
+  }
+  .sliderContentShape img {
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .home h1 {
+    font-size: 6rem;
+  }
+  .home p {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .sliderContentShape {
+    top: 75px;
+    right: 25px;
+  }
+  .sliderContentShape img {
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home h1 {
+    font-size: 4rem;
+  }
+  .home p {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+  .sliderContentShape {
+    top: 70px;
+    right: 25px;
+  }
+  .sliderContentShape img {
+    width: 100%;
+    height: auto;
+    max-width: 80%;
+    max-height: 50px;
+  }
+}

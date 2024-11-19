@@ -1,0 +1,12 @@
+.about{
+    height: 100vh;
+}
+.rightSide h3{
+    font-weight: 600;
+color: var(--primary-color);
+}
+.rightSide h2{
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--gray-color);
+}

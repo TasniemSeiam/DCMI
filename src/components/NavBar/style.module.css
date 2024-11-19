@@ -1,0 +1,39 @@
+/* style link active or not */
+.navLink {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 1em 2em;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover,
+.activeNavBar .navLink:hover {
+  color: var(--primary-color);
+}
+
+.navLink.active,
+.activeNavBar .navLink.active {
+  color: var(--primary-color);
+}
+
+/** style nav bar when scroll **/
+.navBar {
+  background: transparent;
+  z-index: 1000;
+}
+.activeNavBar {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+.activeNavBar .navLink {
+  color: #242424;
+}
