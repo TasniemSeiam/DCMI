@@ -1,0 +1,36 @@
+.divOverlay {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+.divOverlay h5 {
+  position: relative;
+  transform: translateY(30px); 
+  opacity: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.6s ease-in-out;
+}
+.category {
+  width: fit-content;
+}
+.category:hover .divOverlay {
+  opacity: 1;
+  background-color: #98c949a2;
+  cursor: pointer;
+}
+
+.category:hover .divOverlay > h5 {
+  opacity: 1; 
+  transform: translateY(0);
+}
+.categoryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

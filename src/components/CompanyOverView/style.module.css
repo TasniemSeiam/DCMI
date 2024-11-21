@@ -1,0 +1,21 @@
+.sliderBlueShadow{
+    top:0;
+    left: 0;
+    z-index: 0;
+}
+.sliderRedShadow{
+    bottom:-25%;
+    right: 0;
+    z-index: 0;
+}
+.sliderYellowShadow{
+    top: -22%;
+    left: 0;
+    z-index: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .companyOverView{
+        overflow: hidden !important;
+    }
+}

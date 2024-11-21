@@ -1,7 +1,8 @@
 import { Link } from "react-scroll"; // For smooth scrolling and active state management
 import style from "./style.module.css";
-import brand from "../../assets/images/logo/logo.png";
 import { useState } from "react";
+import { Link as LinkTo } from "react-router-dom";
+
 
 
 const navLinks = [
@@ -35,9 +36,9 @@ const NavBar = () => {
     <header className={` ${style.header} position-relative `}>
       <nav className= {navbar?` ${style.activeNavBar} ${style.navBar} navbar navbar-expand-lg navbar-light py-3  w-100`:` ${style.navBar} navbar navbar-expand-lg navbar-light py-3 position-absolute  w-100`} >
         <div className="container container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={brand} alt="HIBRO" />
-          </a>
+          <LinkTo className="navbar-brand" to="/">
+            <img src="/images/logo/logo.png" alt="HIBRO" />
+          </LinkTo>
           <button
             className="navbar-toggler"
             type="button"

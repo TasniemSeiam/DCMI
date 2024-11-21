@@ -1,0 +1,15 @@
+.funFactArea{
+    background: var(--gray-color);
+}
+.singleFact{
+    font-size: 30px;
+    line-height: 1.4;
+}
+.singleFact span{
+    font-size: 90px;
+    font-weight: 700;
+}
+.themeColor{
+    color: var(--primary-color);
+    font-weight: 700;
+}

@@ -1,46 +1,33 @@
 /*left side */
 .sliderYellowShadow {
-  left: -50px;
+  left: -40px;
   top: 0%;
-  z-index: -1;
+  z-index: 2;
 }
 .sliderRedShadow {
-  left: -30%;
-  bottom: -30%;
+  left: -10%;
+  bottom: 2%;
+  z-index: 0;
 }
 .sliderBlueShadow {
-  left: -40%;
-  top: -10%;
+  left: -17%;
+  top: -17%;
+  z-index: 1;
 }
 
 .sliderContentShape {
   top: 190px;
   right: 80px;
 }
-/*shape img animation*/
-@keyframes anim-up-down {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.shapeUpDownAnimation {
-  animation: anim-up-down 5s infinite;
-}
 .home h1 {
-  font-size: 9rem;
+  font-size: 10rem;
   color:var(--gray-color);
   font-weight: 700;
 }
 .home p {
   font-size: 2rem;
   line-height: 1.2;
+  padding-bottom: 2px;
 }
 /*style right side*/
 .rightSide {
@@ -48,13 +35,20 @@
   background: url("../../assets/images/slider/slider-img.jpg") no-repeat center;
   background-size: cover;
   border-bottom-left-radius: 15px;
+  z-index: 5;
 }
 /* style and animate button */
+.btns{
+  max-width: fit-content;
+  max-height: fit-content;
+  padding: 20px 0;
+  overflow: hidden;
+}
 .btn {
   color: #fff;
   cursor: pointer;
   position: relative;
-  top: 1.3em;
+  /* top: 1.3em; */
   overflow: hidden;
   transition: all 0.3s;
   border-radius: 5px;

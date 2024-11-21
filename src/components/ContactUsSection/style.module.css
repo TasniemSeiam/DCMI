@@ -1,0 +1,44 @@
+.sliderBlueShadow{
+    top:5%;
+    left: 0;
+    z-index: 0;
+}
+.sliderRedShadow{
+    top:10%;
+    left: 0;
+    z-index: 0;
+}
+.sliderYellowShadow{
+    top: -10%;
+    left: 0;
+    z-index: 0;
+}
+
+.contactIcon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+.contactLi  span{
+    color: #fff;
+    font-size: 1.4rem;
+    height: auto;
+}
+.contactLi>div>h6{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--gray-color);
+}
+.contactLi>div>p{
+    font-size: 1.3rem;
+}
+
+
+@media screen and (max-width: 980px) {
+    .companyOverView{
+        overflow: hidden !important;
+    }
+}

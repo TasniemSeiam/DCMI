@@ -1,0 +1,15 @@
+.sliderBlueShadow{
+    right: 10px;
+    top: -90px;
+    z-index: 0;
+}
+.sliderRedShadow{
+    left: 0px;
+    top: 120px;
+    z-index: 0;
+}
+.sliderYellowShadow{
+    left: 75px;
+    top: -70px;
+    z-index: 0;
+}
