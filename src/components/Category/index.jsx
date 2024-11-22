@@ -3,13 +3,13 @@ import style from "./style.module.css";
 
 const Category = (props) => {
   return (
-    <Link to={`/${props.pagePath}`} >
+    <Link to={`/${props.pagePath}`}  >
       <div
-        className={`${style.category} h-100 card bg-transparent border-0 p-3 position-relative `}
+        className={`${style.category} d-flex justify-content-center align-items-center h-100 card bg-transparent  border-0 position-relative `}
       >
         <img
           src={props.imageSrc}
-          className={`${style.categoryImg} card-img`}
+          className={`${style.categoryImg}  card-img`}
           alt={props.title}
         />
         <div className={`${style.divOverlay} card-img-overlay `}>

@@ -64,7 +64,7 @@
   background-color: #f8f6f649;
   top: 50%;
   left: 40%;
-  transform: skewX(30deg) translate(-270%, -50%);
+  transform: skewX(-30deg) translate(-310%, -50%);
   transition: all 0.5s;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .btn:hover::before {
-  transform: skewX(30deg) translate(300%, -50%);
+  transform: skewX(-30deg) translate(300%, -50%);
   transition-delay: 0.1s;
 }
 

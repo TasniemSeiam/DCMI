@@ -1,6 +1,7 @@
 import React from "react";
 import HeadersOfPage from "../HeadersOfPage";
 import style from "./style.module.css";
+import ContactForm from "../ContactForm";
 
 const contactInfo = [
   {
@@ -22,27 +23,27 @@ const ContactUs = () => {
       className={` ${style.contactUs} py-5  overflow-hidden position-relative container-fluid`}
       id="contact"
     >
-      <div className="z-3 px-5 py-5">
+      <div className="z-3  py-5">
         <HeadersOfPage
           header2="Contact Details Questions Or Inquiries"
           header4="Contact Us"
         />
-        <div className="row pt-5">
-          <div className="col-12  col-md-6 ">
-            <ul>
+        <div className="row px-md-5 pt-5">
+          <div className="col-12  col-lg-6 ">
+            <ul className="" >
               {contactInfo.map((contact, inx) => (
                 <li
                   key={inx}
-                  className={` ${style.contactLi} row align-items-center text-center justify-content-center justify-content-lg-start text-lg-start  mb-3 `}
+                  className={` ${style.contactLi} row align-items-center text-center justify-content-center justify-content-md-start text-md-start  mb-3 `}
                 >
                   <div
-                    className={`${style.contactIcon} col-2 align-items-center justify-content-center d-flex flex-column d-inline-block me-lg-4 align-items-center`}
+                    className={`${style.contactIcon} mb-2 col-2 align-items-center justify-content-center d-flex flex-column  me-md-4 `}
                   >
                     <span className="   d-inline-block">
                       <i className={contact.icon}></i>
                     </span>
                   </div>
-                  <div className="col-10" >
+                  <div className="col-10 text-start ">
                     <h6>{contact.title}</h6>
                     <p className="text-secondary">{contact.data}</p>
                   </div>
@@ -50,8 +51,11 @@ const ContactUs = () => {
               ))}
             </ul>
           </div>
-          <div className="col-12 col-md-6">left</div>
           {/*form in left side */}
+          <div className="col-12 col-md-6">
+          <ContactForm/>
+          </div>
+          {/*form in right side */}
         </div>
       </div>
 

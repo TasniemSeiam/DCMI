@@ -1,4 +1,5 @@
 // import React from 'react'
+import { Link } from "react-scroll";
 import style from "./style.module.css";
 const HomeSection = () => {
   return (
@@ -21,19 +22,19 @@ const HomeSection = () => {
           >
             <img src="/images/shape/shape1.png" alt="shape" />
           </div>
-          <div className="container w-75 py-5 px-2 overflow-hidden z-3 ">
+          <div className="container d-flex flex-column align-items-center align-items-lg-start w-75 py-5 px-2 overflow-hidden z-3 ">
             <h1>DCMI</h1>
             <p className=" text-center text-lg-start text-secondary pb-3 ">
               We are a manufacturer of medical devices, rapid test and
               consumables
             </p>
             <div className={` ${style.btns} `}>
-              <a
-                href="#contact"
+              <Link
+                to="contact"
                 className={`  text-white fw-bold  px-5 py-3 ${style.btn}`}
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

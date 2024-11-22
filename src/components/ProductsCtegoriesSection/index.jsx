@@ -11,10 +11,10 @@ const ProductsCategories = () => {
     >
       <div className="z-3 py-5"  >
         <HeadersOfPage header2="Our Product" header4="DCMI" />
-        <div className="row " >
-          <div className="card-group justify-content-center">
+        <div className=" px-4" >
+          <div className="row justify-content-center px-4 align-content-center g-4 ">
             {categoriesTitle.map((category, inx) => (
-              <div className=" col-md-3 m-2 z-3 " key={inx}>
+              <div className=" col-sm-6 col-lg-4  z-3 " key={inx}>
                 <Category
                   imageSrc={category.imageSrc}
                   title={category.title}

@@ -1,30 +1,55 @@
 /** left side**/
-.leftSide{
-    height: 100vh;
-    margin-bottom: 10px;
+.leftSide {
+  height: 100vh;
 }
 .aboutColorShapeBg {
   width: 424px;
   height: 409px;
   border-radius: 12px;
   left: -110px;
-  bottom: -95px;
+  bottom: -175px;
 }
-.themeBg{
-background: var(--primary-color);
-z-index: 1;
+.themeBg {
+  background: var(--primary-color);
+  z-index: 1;
 }
-.secondaryBg{
-    background: #f0f9fa;
-    bottom: -3%;
-    z-index: 0;
+.secondaryBg {
+  background: #f0f9fa;
+  bottom: -13%;
+  z-index: 0;
 }
-.aboutImgOver{
-    z-index: 10;
-    border-radius: 12px;
-    
+.aboutImgOver {
+  z-index: 10;
+  left: 15%;
+  top: 80px;
+  border-radius: 12px;
 }
+.aboutImg {
+  border-radius: 12px;
+  /* transform: perspective(1500px); */
+  transition: all 0.99s;
+}
+/* .aboutImgOver:hover {
+  transform: perspective(1500px) rotateX(-5deg) rotateY(5deg);
+  transition: all 0.5s;
+} */
 
+.aboutImgOver:before {
+  content: "";
+  position: absolute;
+  width:100px;
+  z-index: 10;
+  height:100%;
+  background-color: #f9f5f543;
+  top: 50%;
+  left: 0;
+  transform: skewX(-30deg) translate(-500%, -50%);
+  transition: all 0.5s;
+}
+.aboutImgOver:hover::before {
+  transform: skewX(-30deg) translate(450%, -50%);
+  transition-delay: 0.1s;
+}
 /**right side **/
 .rightSide h3 {
   font-weight: 600;
@@ -46,6 +71,9 @@ z-index: 1;
 .aboutInfo:nth-child(2n + 1) {
   font-weight: 600;
 }
+.aboutInfo p{
+  font-size: 1.4rem;
+}
 .sliderContentShape {
   top: 0;
   right: 10%;
@@ -64,19 +92,43 @@ z-index: 1;
 
 /**responsive**/
 @media screen and (max-width: 920px) {
-    .aboutImgOver{
-      max-width:fit-content ;
-    }
+  .aboutImgOver {
+    max-width: fit-content;
+    /* max-height: 400px; */
   }
-  
-  /* @media screen and (max-width: 780px) {
-    .aboutImgOver{
-      max-width:fit-content ;
-    }
+  .leftSide {
+    height: 60vh;
   }
-  
-  @media screen and (max-width: 480px) {
-    .aboutImgOver{
-      max-width:fit-content ;
+}
+
+@media screen and (max-width: 780px) {
+  .aboutImgOver {
+    max-width: fit-content;
+  }
+  .leftSide {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .leftSide{
+      height: 90vh;
     }
-  } */
+  /* .aboutColorShapeBg{
+      width: 300px;
+      height: 300px;
+      left: -70px;
+      bottom: -80px;
+    } */
+}
+@media screen and (max-width: 350px) {
+  .leftSide {
+    height: 120vh;
+  }
+  /* .aboutColorShapeBg{
+      width: 300px;
+      height: 300px;
+      left: -70px;
+      bottom: -80px;
+    } */
+}

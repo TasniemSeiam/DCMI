@@ -10,7 +10,7 @@ export const categoriesTitle = [
       pagePath: "vacuum-tubes",
     },
     {
-      imageSrc: "/images/categories/rapidTest.jpg",
+      imageSrc: "/images/categories/4.png",
       title: "Rapid Test",
       pagePath: "rapid-test",
     },

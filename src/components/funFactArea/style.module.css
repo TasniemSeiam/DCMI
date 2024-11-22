@@ -1,15 +1,38 @@
 .funFactArea{
-    background: var(--gray-color);
+    background-color: #37403d;
+    font-weight: 600;
 }
 .singleFact{
     font-size: 30px;
     line-height: 1.4;
 }
 .singleFact span{
-    font-size: 90px;
+    font-size: 6rem;
     font-weight: 700;
 }
 .themeColor{
     color: var(--primary-color);
     font-weight: 700;
 }
+.pre{
+    font-size:3rem!important;
+    position: relative;
+    top: -35px;
+}
+/**responsive**/
+
+@media screen and (max-width: 600px) {
+    
+    .singleFact{
+        font-size: 20px;
+    }
+    .singleFact span{
+        font-size: 4rem;
+    }
+    .pre{
+        font-size:2rem!important;
+        position: relative;
+        top: -25px;
+    }
+}
+
