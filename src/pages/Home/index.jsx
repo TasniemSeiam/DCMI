@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <NavBar/>
-      <main id="scroll-container" >
+      <main id="scroll-container">
         <HomeSection />
         <AboutSection />
         <FunFactArea />

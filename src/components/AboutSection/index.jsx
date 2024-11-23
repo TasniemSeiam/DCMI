@@ -40,7 +40,10 @@ const AboutSection = () => {
         <div className="">
           <div className="row">
             <div
-              className={`  mb-5 mb-sm-1 col-12 col-lg-6 ${style.leftSide} `}
+              className={`  mb-5 mb-sm-1 col-12 col-lg-6 ${style.leftSide} aos-init `}
+              data-aos-delay="70"
+              data-aos-duration="2000"
+              data-aos="fade-right"
             >
               <div className="about-img-wrapper position-relative ">
                 <div className={`${style.aboutImgDiv}  position-relative mb-5`}>
@@ -60,10 +63,16 @@ const AboutSection = () => {
                   </div>
                 </div>
                 <div
-                  className={`${style.aboutColorShapeBg} ${style.themeBg} position-absolute mb-5`}
+                  className={`${style.aboutColorShapeBg} ${style.themeBg} position-absolute mb-5 aos-init`}
+                  data-aos="fade-right"
+                  data-aos-delay="10"
+                  data-aos-duration="2500"
                 ></div>
                 <div
-                  className={`${style.aboutColorShapeBg} ${style.secondaryBg} position-absolute mb-5 `}
+                  className={`${style.aboutColorShapeBg} ${style.secondaryBg} position-absolute mb-5`}
+                  data-aos="fade-right"
+                  data-aos-delay="5"
+                  data-aos-duration="2600"
                 ></div>
               </div>
             </div>

@@ -12,8 +12,16 @@ import ProductVacuumTubesDetailsPage from "../pages/ProductVacuumTubesDetailsPag
 import Footer from "../components/Footer";
 import ProductConsumablestDetailsPage from "../pages/ProductConsumablestDetailsPage";
 import ProductMedicalDeviceDetailsPage from "../pages/ProductMedicalDeviceDetailsPage";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const AppRouters = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh(); // Reinitialize AOS after route change
+  }, []);
   return (
     <Router>
       <Routes>
@@ -27,20 +35,32 @@ const AppRouters = () => {
         />
         <Route path="medical-devices" element={<MedicalDevicesPage />} />
         <Route path="consumables" element={<ConsumablesPage />} />
-        <Route path="/vacuum-tubes/:id" element={<ProductVacuumTubesDetailsPage />} />
-        <Route path="/rapid-test/:id" element={<ProductRapidTestDetailsPage />} />
-        <Route path="/consumables/:id" element={<ProductConsumablestDetailsPage />} />
-        <Route path="/medical-devices/:id" element={<ProductMedicalDeviceDetailsPage />} />
-        <Route path="/hematology-reagents/:id" element={<ProductMedicalDeviceDetailsPage />} />
-        
-
+        <Route
+          path="/vacuum-tubes/:id"
+          element={<ProductVacuumTubesDetailsPage />}
+        />
+        <Route
+          path="/rapid-test/:id"
+          element={<ProductRapidTestDetailsPage />}
+        />
+        <Route
+          path="/consumables/:id"
+          element={<ProductConsumablestDetailsPage />}
+        />
+        <Route
+          path="/medical-devices/:id"
+          element={<ProductMedicalDeviceDetailsPage />}
+        />
+        <Route
+          path="/hematology-reagents/:id"
+          element={<ProductMedicalDeviceDetailsPage />}
+        />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };
-
 
 export default AppRouters;

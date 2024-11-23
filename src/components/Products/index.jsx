@@ -8,6 +8,10 @@ const Products = ({ header2, header4, products }) => {
     <section
       className={` ${style.ProductsCategories} p-0 overflow-hidden  container-fluid`}
       id="products"
+      data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000"
+          data-aos-delay="500" 
     >
       <ProductsPageNavBar currentPage={header2} />
       <div className=" px-5 py-5 ">
@@ -16,7 +20,7 @@ const Products = ({ header2, header4, products }) => {
         <div className="row row-cols-1 row-cols-md-3 g-4 ">
           {products.length > 0 ? (
             products.map((productInfo) => (
-              <div className=" col z-3 " key={productInfo.id}>
+              <div className=" col z-3 " key={productInfo.id} >
                 <ProductsCard
                   category={productInfo.category}
                   id={productInfo.id}

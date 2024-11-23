@@ -71,7 +71,13 @@ const ContactForm = () => {
         {({ isSubmitting }) => (
           <Form className={`row g-3 ${style.form} `}>
             {/* Name Field */}
-            <div className="col-md-6">
+            <div
+              className="col-md-6  "
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+              data-aos-delay="50"
+            >
               <Field
                 type="text"
                 name="name"
@@ -87,7 +93,13 @@ const ContactForm = () => {
             </div>
 
             {/* Email Field */}
-            <div className="col-md-6">
+            <div
+              className="col-md-6  "
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+              data-aos-delay="50"
+            >
               <Field
                 type="email"
                 name="email"
@@ -103,7 +115,13 @@ const ContactForm = () => {
             </div>
 
             {/* Phone Field */}
-            <div className="col-md-6">
+            <div
+              className="col-md-6  "
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+              data-aos-delay="50"
+            >
               <Field
                 type="text"
                 name="phone"
@@ -119,7 +137,13 @@ const ContactForm = () => {
             </div>
 
             {/* Subject Field */}
-            <div className="col-md-6">
+            <div
+              className="col-md-6  "
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+              data-aos-delay="50"
+            >
               <Field
                 type="text"
                 name="subject"
@@ -135,7 +159,13 @@ const ContactForm = () => {
             </div>
 
             {/* Message Field */}
-            <div className="col-12">
+            <div
+              className="col-12 "
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+              data-aos-delay="50"
+            >
               <Field
                 as="textarea"
                 name="message"
@@ -152,7 +182,13 @@ const ContactForm = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="col-12 ps-2 btns ">
+            <div
+              className="col-12 ps-2 btns  "
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+              data-aos-delay="50"
+            >
               <button
                 type="submit"
                 className="btn text-white fw-bold  px-5 py-3"

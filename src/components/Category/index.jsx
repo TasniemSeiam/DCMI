@@ -5,7 +5,10 @@ const Category = (props) => {
   return (
     <Link to={`/${props.pagePath}`}  >
       <div
-        className={`${style.category} d-flex justify-content-center align-items-center h-100 card bg-transparent  border-0 position-relative `}
+        className={`${style.category} d-flex justify-content-center align-items-center h-100 card bg-transparent  border-0 position-relative `} data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000"
+          data-aos-delay="500" 
       >
         <img
           src={props.imageSrc}

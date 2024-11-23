@@ -13,7 +13,7 @@ const social = [
 
 const HomeSection = () => {
   return (
-    <section className={`container-fluid ${style.home}  `} id="home">
+    <section className={`container-fluid ${style.home}  `} style={{height:"100vh"}} id="home">
       <div className="row  ">
         <div className="  col-12 col-sm-6 d-flex flex-column text-center text-lg-start justify-content-center overflow-hidden order-2 order-md-1 position-relative ">
           {/* start color imgs in background left side slider home */}
@@ -32,13 +32,13 @@ const HomeSection = () => {
           >
             <img src="/images/shape/shape1.png" alt="shape" />
           </div>
-          <div className="container d-flex flex-column align-items-center align-items-lg-start w-75 py-5 px-2 overflow-hidden z-3 ">
-            <h1>DCMI</h1>
-            <p className=" text-center text-lg-start text-secondary pb-3 ">
+          <div className="container d-flex flex-column justify-content-center align-items-center align-items-lg-start w-75 py-5 px-2 overflow-hidden z-3 "   >
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="800">DCMI</h1>
+            <p className=" text-center text-lg-start text-secondary pb-3 " data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1000">
               We are a manufacturer of medical devices, rapid test and
               consumables
             </p>
-            <div className={` ${style.btns} btns `}>
+            <div className={` ${style.btns} btns aos-init`} data-aos="fade-up" data-aos-duration="1000">
               <Link
                 to="contact"
                 className={`  text-white fw-bold  px-5 py-3 ${style.btn} btn `}

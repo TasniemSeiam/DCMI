@@ -3,7 +3,7 @@ import style from "./style.module.css";
 const CompanyOverViewCard = ({ iconImage, title, description }) => {
   return (
     <div
-      className={`${style.card} h-100  px-5 py-5 text-md-start text-center card  mb-3`}
+      className={`${style.card} h-100  px-5 py-5 text-md-start text-center card  mb-3 aos-init `} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="50"
     >
       <div className="row g-0 align-items-center justify-content-center ">
         <div
