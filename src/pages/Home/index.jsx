@@ -1,24 +1,16 @@
-// import { useState,useEffect } from "react";
-import AboutSection from "../../components/AboutSection";
-import BlogSection from "../../components/BlogSection";
-import CompanyOverView from "../../components/CompanyOverView";
-import ContactUs from "../../components/ContactUsSection";
+import AboutSection from "../../components/AboutSectionComponents/AboutSection";
+import CompanyOverView from "../../components/CompanyOverViewComponent/CompanyOverView";
+import ContactUs from "../../components/contactSectionComponent/ContactUsSection";
 import { FunFactArea } from "../../components/funFactArea";
-import HomeSection from "../../components/HomeSection";
+import HomeSection from "../../components/HomeSectionComponents/HomeSection";
 import NavBar from "../../components/NavBar";
-import ProductsCategories from "../../components/ProductsCtegoriesSection";
-import TopBtn from "../../components/TopBtn";
-
+import ProductsCategories from "../../components/CategoriesSectionComponents/ProductsCtegoriesSection";
+import BlogSection from "../../components/BlogSectionComponents/BlogSection";
 
 const Home = () => {
-
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(false), 300);
-  // });
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <main id="scroll-container">
         <HomeSection />
         <AboutSection />
@@ -26,9 +18,8 @@ const Home = () => {
         <ProductsCategories />
         <CompanyOverView />
         <ContactUs />
-        <BlogSection/>
+        <BlogSection />
       </main>
-      <TopBtn/>
     </>
   );
 };

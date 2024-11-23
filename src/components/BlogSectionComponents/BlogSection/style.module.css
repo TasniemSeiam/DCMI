@@ -1,0 +1,64 @@
+.blog {
+  background-color: #f0f9fa;
+}
+.arrows {
+  top: 20%;
+  right: 5%;
+}
+.arrows button span {
+  background-color: transparent;
+  border: 1px solid #a6a5a5;
+  color: var(--primary-color);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.arrows button span:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/**responsive**/
+
+@media screen and (max-width: 980px) {
+  .blog {
+    padding: 1rem;
+  }
+  .arrows {
+    top: 13%;
+    right: 1%;
+  }
+  .arrows button span {
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .blog {
+    padding: 0.5rem;
+  }
+  .arrows {
+    top: 13%;
+    right: 1%;
+  }
+  .arrows button span {
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .arrows {
+        top: 22%;
+        right: 1%;
+      }
+      .arrows button span {
+        font-size: 0.8rem;
+        width: 35px;
+        height: 35px;
+      }
+}

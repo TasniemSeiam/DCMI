@@ -15,6 +15,7 @@ import ProductMedicalDeviceDetailsPage from "../pages/ProductMedicalDeviceDetail
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import TopBtn from "../components/TopBtn";
 const AppRouters = () => {
   useEffect(() => {
     AOS.init({
@@ -58,7 +59,10 @@ const AppRouters = () => {
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      
       <Footer />
+      <TopBtn />
+
     </Router>
   );
 };

@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import ProductDetailsCard from "../../components/ProductDetails";
 import { useState, useEffect } from "react";
 import style from "./style.module.css";
 import ProductsPageNavBar from "../../components/ProductsPageNavBar";
+import ProductDetailsCard from "../../components/productDetailsComponents/ProductDetails";
 // import { AllProductsInfo } from "../../data/allProductsInfo";
 
 // const AllProductsInfo = [
@@ -83,7 +83,7 @@ const ProductDetailsPage = ({ data }) => {
 
   if (!details) {
     return (
-      <div className={`${style.page}`} >
+      <div className={`${style.page}`}>
         <ProductsPageNavBar currentPage="Product Details" />
 
         <p className=" fs-3 text-danger d-flex h-100 flex-column text-center justify-content-center align-items-center ">
@@ -98,6 +98,51 @@ const ProductDetailsPage = ({ data }) => {
       id="products"
     >
       <ProductsPageNavBar currentPage="Product Details" />
+
+      {/* start modal of image  */}
+
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                {details.title}
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src={details.imageSrc}
+                className="img-fluid rounded"
+                alt={details.title}
+              />
+            </div>
+            <div class="modal-footer ">
+              <button
+                type="button"
+                class="btn "
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>{" "}
+      {/* end modal for image  */}
 
       <div className=" my-5 ">
         <ProductDetailsCard {...details} />

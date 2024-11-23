@@ -10,6 +10,9 @@
 .formControl:focus {
   border-color: var(--primary-color);
 }
+.theme-color{
+  color: var(--primary-color);
+}
 /**responsive**/
 @media screen and (max-width: 980px) {
   .formControl {
