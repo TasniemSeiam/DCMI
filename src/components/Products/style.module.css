@@ -13,7 +13,16 @@
     top: -70px;
     z-index: 0;
 }
-
+.notFound{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ProductsCategories{
+    min-height: 80vh;
+}
 /** responsive slider**/
 
 @media screen and (max-width: 920px) {

@@ -1,3 +1,11 @@
 .card{
    max-width: 100%;
 }
+.cardBody h5{
+   font-weight: 600;
+   font-size: 3.5rem;
+}
+.cardBody p{
+   font-size: 1.5rem;
+   color: #585858;
+}

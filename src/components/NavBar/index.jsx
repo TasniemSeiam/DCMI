@@ -33,7 +33,7 @@ const NavBar = () => {
   window.addEventListener("scroll", changeNavbar)
 
   return (
-    <header className={` ${style.header} position-relative `}>
+    <header className={` ${style.header} position-relative`}>
       <nav className= {navbar?` ${style.activeNavBar} ${style.navBar} navbar navbar-expand-lg navbar-light py-3  w-100`:` ${style.navBar} navbar navbar-expand-lg navbar-light py-3 position-absolute  w-100`} >
         <div className="container container-fluid">
           <LinkTo className="navbar-brand" to="/">

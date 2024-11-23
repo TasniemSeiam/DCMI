@@ -13,12 +13,7 @@
     top: -70px;
     z-index: 0;
 }
-.page{
-    height: 80vh;
-}
-.ProductsCategories{
-    min-height: 100vh;
-}
+
 /** responsive slider**/
 
 @media screen and (max-width: 920px) {

@@ -2,7 +2,8 @@ import { useParams } from "react-router-dom";
 import ProductDetailsCard from "../../components/ProductDetails";
 import { useState, useEffect } from "react";
 import style from "./style.module.css";
-import { AllProductsInfo } from "../../data/allProductsInfo";
+import ProductsPageNavBar from "../../components/ProductsPageNavBar";
+// import { AllProductsInfo } from "../../data/allProductsInfo";
 
 // const AllProductsInfo = [
 //   {
@@ -82,17 +83,23 @@ const ProductDetailsPage = ({ data }) => {
 
   if (!details) {
     return (
-      <p className=" fs-3 position-absolute top-50 end-50 ">
-        Product not found...
-      </p>
+      <div className={`${style.page}`} >
+        <ProductsPageNavBar currentPage="Product Details" />
+
+        <p className=" fs-3 text-danger d-flex h-100 flex-column text-center justify-content-center align-items-center ">
+          Product not found...
+        </p>
+      </div>
     );
   }
   return (
     <section
-      className={` ${style.ProductsCategories} py-5 overflow-hidden  container-fluid`}
+      className={` ${style.ProductsCategories} p-0 overflow-hidden  container-fluid`}
       id="products"
     >
-      <div className="  ">
+      <ProductsPageNavBar currentPage="Product Details" />
+
+      <div className=" my-5 ">
         <ProductDetailsCard {...details} />
       </div>
       {/* start color imgs in background left side slider home */}

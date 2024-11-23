@@ -1,5 +1,5 @@
 import Products from "../../components/Products";
-import { MedicalDevices } from "../../data/medicalDevices";
+import { MedicalDevicesInfo } from "../../data/medicalDevices";
 
 // const AllProductsInfo = [
 //   {
@@ -60,7 +60,7 @@ import { MedicalDevices } from "../../data/medicalDevices";
 // ];
 
 const MedicalDevicesPage = () => {
-  return <Products  header4=" " header2="Medical Devices" products={MedicalDevices} />;
+  return <Products  header4=" " header2="Medical Devices" products={MedicalDevicesInfo} />;
 };
 
 export default MedicalDevicesPage;

@@ -37,45 +37,23 @@
   border-bottom-left-radius: 15px;
   z-index: 5;
 }
-/* style and animate button */
-.btns{
-  max-width: fit-content;
-  max-height: fit-content;
-  padding: 20px 0;
-  overflow: hidden;
-}
-.btn {
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  /* top: 1.3em; */
-  overflow: hidden;
-  transition: all 0.3s;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  font-size: 1.2rem;
-}
 
-.btn:before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 92%;
-  background-color: #f8f6f649;
+/**social slider**/
+.sliderSocialLink{
   top: 50%;
-  left: 40%;
-  transform: skewX(-30deg) translate(-310%, -50%);
+  transform:translateY(-50%);
+  right: 20px;
+}
+.sliderSocialLink>ul>li i{
+  font-size: 20px;
+}
+.sliderSocialLink>ul>li:hover{
+  background-color: var(--primary-color);
   transition: all 0.5s;
 }
-
-.btn:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.btn:hover::before {
-  transform: skewX(-30deg) translate(300%, -50%);
-  transition-delay: 0.1s;
+.sliderSocialLink>ul>li:hover  i{
+  transform: rotateY(360deg);
+  transition: all 0.5s;
 }
 
 /******* responsive ********************************/

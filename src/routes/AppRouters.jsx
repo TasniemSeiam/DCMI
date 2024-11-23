@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "../components/NavBar";
 import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
 import AllProducts from "../pages/AllProducts";
@@ -10,11 +9,13 @@ import MedicalDevicesPage from "../pages/MedicalDevicesPage";
 import ConsumablesPage from "../pages/ConsumablesPage";
 import ProductRapidTestDetailsPage from "../pages/ProductRapidTestDetailsPage";
 import ProductVacuumTubesDetailsPage from "../pages/ProductVacuumTubesDetailsPage";
+import Footer from "../components/Footer";
+import ProductConsumablestDetailsPage from "../pages/ProductConsumablestDetailsPage";
+import ProductMedicalDeviceDetailsPage from "../pages/ProductMedicalDeviceDetailsPage";
 
 const AppRouters = () => {
   return (
     <Router>
-      <NavBar />
       <Routes>
         <Route index element={<Home />} />
         <Route path="all-products" element={<AllProducts />} />
@@ -28,11 +29,15 @@ const AppRouters = () => {
         <Route path="consumables" element={<ConsumablesPage />} />
         <Route path="/vacuum-tubes/:id" element={<ProductVacuumTubesDetailsPage />} />
         <Route path="/rapid-test/:id" element={<ProductRapidTestDetailsPage />} />
+        <Route path="/consumables/:id" element={<ProductConsumablestDetailsPage />} />
+        <Route path="/medical-devices/:id" element={<ProductMedicalDeviceDetailsPage />} />
+        <Route path="/hematology-reagents/:id" element={<ProductMedicalDeviceDetailsPage />} />
         
 
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 };

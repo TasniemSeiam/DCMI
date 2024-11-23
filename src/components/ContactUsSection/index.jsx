@@ -29,7 +29,7 @@ const ContactUs = () => {
           header4="Contact Us"
         />
         <div className="row px-md-5 pt-5">
-          <div className="col-12  col-lg-6 ">
+          <div className="col-12 z-3 col-lg-6 ">
             <ul className="" >
               {contactInfo.map((contact, inx) => (
                 <li
@@ -52,7 +52,7 @@ const ContactUs = () => {
             </ul>
           </div>
           {/*form in left side */}
-          <div className="col-12 col-md-6">
+          <div className="col-12 z-3 col-lg-6">
           <ContactForm/>
           </div>
           {/*form in right side */}

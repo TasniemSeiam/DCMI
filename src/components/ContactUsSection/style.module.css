@@ -41,6 +41,19 @@
   .companyOverView {
     overflow: hidden !important;
   }
+  .contactIcon {
+    width: 65px;
+    height:65px;
+  }
+  .contactLi span {
+    font-size: 1.2rem;
+  }
+  .contactLi > div > h6 {
+    font-size: 1.3rem;
+  }
+  .contactLi > div > p {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {

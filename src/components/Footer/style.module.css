@@ -1,0 +1,21 @@
+
+/**social slider**/
+  .footerWidget h5{
+    color: var(--gray-color);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .sliderSocialLink>ul>li span{
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  
+  .sliderSocialLink>ul>li:hover span{
+    transform: rotateY(360deg);
+    transition: all 0.5s;
+  }
+  .copyRight{
+    font-size: 1.3rem;
+  }

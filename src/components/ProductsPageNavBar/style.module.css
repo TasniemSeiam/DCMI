@@ -1,0 +1,22 @@
+.bar {
+  font-size: 1.7rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  color: #fff;
+}
+.home:hover {
+    text-decoration: underline;
+    
+}
+/*responsive*/
+@media screen and (max-width: 920px) {
+    .bar{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 870px) {
+    .bar{
+        font-size: 1.2rem;
+    }
+}

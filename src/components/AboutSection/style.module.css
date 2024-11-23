@@ -29,10 +29,7 @@
   /* transform: perspective(1500px); */
   transition: all 0.99s;
 }
-/* .aboutImgOver:hover {
-  transform: perspective(1500px) rotateX(-5deg) rotateY(5deg);
-  transition: all 0.5s;
-} */
+/* animation on img  */
 
 .aboutImgOver:before {
   content: "";
@@ -44,7 +41,7 @@
   top: 50%;
   left: 0;
   transform: skewX(-30deg) translate(-500%, -50%);
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 .aboutImgOver:hover::before {
   transform: skewX(-30deg) translate(450%, -50%);

@@ -1,6 +1,16 @@
 // import React from 'react'
 import { Link } from "react-scroll";
+
+import { Link as LinkTo } from "react-router-dom";
 import style from "./style.module.css";
+
+const social = [
+  { icon: "fab fa-facebook-f", path: "facebook.com" },
+  { icon: "fab fa-twitter", path: "twitter.com" },
+  { icon: "fab fa-linkedin-in", path: "linkedin.com" },
+  { icon: "fab fa-youtube", path: "youtube.com" },
+];
+
 const HomeSection = () => {
   return (
     <section className={`container-fluid ${style.home}  `} id="home">
@@ -28,10 +38,10 @@ const HomeSection = () => {
               We are a manufacturer of medical devices, rapid test and
               consumables
             </p>
-            <div className={` ${style.btns} `}>
+            <div className={` ${style.btns} btns `}>
               <Link
                 to="contact"
-                className={`  text-white fw-bold  px-5 py-3 ${style.btn}`}
+                className={`  text-white fw-bold  px-5 py-3 ${style.btn} btn `}
               >
                 Contact Us
               </Link>
@@ -41,8 +51,25 @@ const HomeSection = () => {
 
         {/*end left side */}
         <div
-          className={` col-12 col-sm-6 ${style.rightSide} order-1 order-md-2 `}
-        ></div>
+          className={` col-12 col-sm-6 ${style.rightSide} position-relative order-1 order-md-2 `}
+        >
+          <div
+            className={`${style.sliderSocialLink} position-absolute  d-block `}
+          >
+            <ul className="  pe-2  ">
+              {social.map((social, inx) => (
+                <li
+                  className=" my-3  p-3 rounded d-block text-center  "
+                  key={inx}
+                >
+                  <LinkTo to={social.path} className=" text-white text-center ">
+                    <i className={social.icon}></i>
+                  </LinkTo>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
       {/*end right side */}
       {/* row */}

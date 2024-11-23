@@ -1,4 +1,4 @@
-export const MedicalDevicesInfo = [
+export const ConsumablesInfo = [
     // {
     //   id: "1",
     //   imageSrc: "/images/products/p1.png",

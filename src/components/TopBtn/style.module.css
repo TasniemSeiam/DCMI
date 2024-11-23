@@ -1,0 +1,28 @@
+.topBtn {
+  position: fixed;
+  font-size: 20px;
+  width: 55px;
+  height: 55px;
+  right: -1px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 11;
+  color: #fff;
+  transition: all 0.3s ease-out 0s;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.topBtn:hover {
+  color: #fff;
+}
+/**responsive**/
+
+@media only screen and (max-width: 768px) {
+  .topBtn {
+    font-size: 15px;
+    width: 45px;
+    height: 45px;
+  }
+}

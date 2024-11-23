@@ -1,11 +1,13 @@
 // import { useState,useEffect } from "react";
 import AboutSection from "../../components/AboutSection";
+import BlogSection from "../../components/BlogSection";
 import CompanyOverView from "../../components/CompanyOverView";
 import ContactUs from "../../components/ContactUsSection";
 import { FunFactArea } from "../../components/funFactArea";
 import HomeSection from "../../components/HomeSection";
-// import NavBar from "../../components/NavBar";
+import NavBar from "../../components/NavBar";
 import ProductsCategories from "../../components/ProductsCtegoriesSection";
+import TopBtn from "../../components/TopBtn";
 
 
 const Home = () => {
@@ -16,14 +18,17 @@ const Home = () => {
   // });
   return (
     <>
+      <NavBar/>
       <main id="scroll-container" >
         <HomeSection />
         <AboutSection />
         <FunFactArea />
         <ProductsCategories />
         <CompanyOverView />
-        <ContactUs/>
+        <ContactUs />
+        <BlogSection/>
       </main>
+      <TopBtn/>
     </>
   );
 };

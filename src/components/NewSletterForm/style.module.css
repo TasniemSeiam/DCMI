@@ -1,0 +1,9 @@
+.emailField{
+    border: none;
+    outline: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.send{
+    color: var(--primary-color);
+}

@@ -1,30 +1,36 @@
 import HeadersOfPage from "../HeadersOfPage";
 import ProductsCard from "../ProductsCard";
+import ProductsPageNavBar from "../ProductsPageNavBar";
 import style from "./style.module.css";
 
-
-
-const Products = ({header2,header4, products }) => {
+const Products = ({ header2, header4, products }) => {
   return (
     <section
-      className={` ${style.ProductsCategories} py-5 overflow-hidden  container-fluid`}
+      className={` ${style.ProductsCategories} p-0 overflow-hidden  container-fluid`}
       id="products"
     >
+      <ProductsPageNavBar currentPage={header2} />
       <div className=" px-5 py-5 ">
         <HeadersOfPage header2={header2} header4={header4} />
 
         <div className="row row-cols-1 row-cols-md-3 g-4 ">
-          {products.map((productInfo) => (
-            <div className=" col z-3 " key={productInfo.id}>
-              <ProductsCard
-                category={productInfo.category}
-                id={productInfo.id}
-                title={productInfo.title}
-                imageSrc={productInfo.imageSrc}
-                description={productInfo.description}
-              />
+          {products.length > 0 ? (
+            products.map((productInfo) => (
+              <div className=" col z-3 " key={productInfo.id}>
+                <ProductsCard
+                  category={productInfo.category}
+                  id={productInfo.id}
+                  title={productInfo.title}
+                  imageSrc={productInfo.imageSrc}
+                  description={productInfo.description}
+                />
+              </div>
+            ))
+          ) : (
+            <div className={`${style.notFound} w-100 text-danger`}>
+              <h2>Products Not Found</h2>
             </div>
-          ))}
+          )}
         </div>
       </div>
       {/* start color imgs in background left side slider home */}
