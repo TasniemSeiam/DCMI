@@ -5,7 +5,10 @@ import ImageComponent from "../ImagesComponent";
 const ProductDetailsCard = (props) => {
   return (
     <div className={`${style.card}  border-0 card mb-5`}>
-      <div className="d-flex flex-column justify-content-center align-items-center">
+      <div className="d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="2000"
+      data-aos-delay="500" >
         <div className="col-6 mb-2">
           <img
             src={props.imageSrc}

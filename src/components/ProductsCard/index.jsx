@@ -6,10 +6,7 @@ const ProductsCard = (props) => {
     <Link to={`/${props.category}/${props.id}`}>
       <div
         className={`${style.card} h-100 overflow-hidden  card bg-transparent border-0 `}
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="2000"
-        data-aos-delay="500"
+        
       >
         <img
           src={props.imageSrc}
