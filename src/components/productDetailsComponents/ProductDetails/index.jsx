@@ -7,8 +7,8 @@ const ProductDetailsCard = (props) => {
     <div className={`${style.card}  border-0 card mb-5`}>
       <div className="d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
-      data-aos-duration="2000"
-      data-aos-delay="500" >
+      data-aos-duration="1000"
+      data-aos-delay="300" >
         <div className="col-6 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{cursor: "pointer"}} >
           <img
             src={props.imageSrc}

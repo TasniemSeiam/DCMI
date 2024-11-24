@@ -39,9 +39,9 @@ const CompanyOverView = () => {
       <div className="z-3 px-5 py-5  ">
         <HeadersOfPage header2="Company Overview" header4="DCMI" />
 
-        <div class="row ">
+        <div className="row ">
           {companyOverViewData.map((data, inx) => (
-            <div class="col-lg-6  z-3 p-3" key={inx}>
+            <div className="col-lg-6  z-3 p-3" key={inx}>
               <CompanyOverViewCard
                 iconImage={data.iconImage}
                 title={data.title}

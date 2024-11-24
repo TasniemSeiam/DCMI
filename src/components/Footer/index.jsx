@@ -7,7 +7,7 @@ const social = [
   { icon: "fab fa-facebook-f", path: "facebook.com",backgroundColor: "#1877f2"},
   { icon: "fab fa-twitter", path: "twitter.com",backgroundColor: "#1da1f2"},
   { icon: "fab fa-linkedin-in", path: "linkedin.com",backgroundColor: "#0077b5" },
-  { icon: "fab fa-youtube", path: "youtube.com",backgroundColor:"#405de6" },
+  { icon: "fab fa-instagram", path: "instagram.com",backgroundColor:"#405de6" },
 ];
 
 const Footer = () => {

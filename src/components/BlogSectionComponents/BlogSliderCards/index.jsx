@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./style.module.css";
 const BlogSliderCard = (props) => {
   return (
-    <div className=" slick-slide   overflow-hidden ">
+    <div className=" slick-slide z-3  overflow-hidden ">
       <div className={` single-blog mx-3 mb-2  ${style.singleBlog} `}>
         <div className="blog-img rounded-top overflow-hidden ">
           <img
@@ -40,10 +40,12 @@ const BlogSliderCard = (props) => {
             </ul>
             <h6 className="px-3 py-2 ">
               <p
-                className={`primary-hover text-dark ${style.link} ${style.linkTitle}`}
-                
+                className={`primary-hover text-dark ${style.link} ${style.linkTitle}  `}
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onClick={props.onClick} // Open modal on click
               >
-                {props.title}
+                {props.who}
               </p>
             </h6>
           </div>

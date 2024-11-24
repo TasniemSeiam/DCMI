@@ -1,0 +1,76 @@
+.modalFooterUl {
+  list-style: none;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.modalFooterUlLiLink:hover,
+.spanIcon:hover {
+  color: var(--primary-color) !important;
+}
+.btnClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.3rem;
+  border: none;
+  padding: 0;
+  background-color: #f0f9fa;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  box-shadow: 0 3px 10px 10px rgba(170, 169, 169, 0.141);
+  opacity: 0.6;
+}
+.btnClose:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+.btnCloseSpan {
+  color: var(--primary-color) !important;
+}
+
+
+.modalTitleH5 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  width: 80%;
+}
+.modalBody{
+    width: 95%;
+    color: var(--lightGray-color);
+    font-size: 1.2rem;
+}
+.modalTop ul li{
+color: var(--lightGray-color);
+line-height: 1.3;
+}
+.link {
+  color: #343c55 ;
+}
+.link:hover{
+    color: var(--primary-color);
+    transition: all 0.3s ease-out 0s;
+}
+
+
+/** responsive**/
+
+@media  screen and (max-width: 768px) {
+  .modalFooterUl {
+    font-size: 0.8rem;
+    line-height: 1;
+    width: 80%;
+    margin:  auto;
+  }
+  .modalTitleH5 {
+    font-size: 1.2rem;
+  width: 100%;
+
+  }
+  .modalBody {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}

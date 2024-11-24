@@ -102,7 +102,7 @@ const ProductDetailsPage = ({ data }) => {
       {/* start modal of image  */}
 
       <div
-        class="modal fade"
+        className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
@@ -110,30 +110,30 @@ const ProductDetailsPage = ({ data }) => {
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="staticBackdropLabel">
                 {details.title}
               </h1>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <img
                 src={details.imageSrc}
-                className="img-fluid rounded"
+                className="img-fluid w-100 rounded"
                 alt={details.title}
               />
             </div>
-            <div class="modal-footer ">
+            <div className="modal-footer ">
               <button
                 type="button"
-                class="btn "
+                className="btn "
                 data-bs-dismiss="modal"
               >
                 Close

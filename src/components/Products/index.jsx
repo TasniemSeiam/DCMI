@@ -31,10 +31,10 @@ const Products = ({ header2, header4, products }) => {
       id="products"
     >
       <ProductsPageNavBar currentPage={header2} />
-      <div className=" px-5 py-5 ">
+      <div className=" px-5 py-5 "  >
         <HeadersOfPage header2={header2} header4={header4} />
 
-        <div className="row row-cols-1 row-cols-md-3 g-4 ">
+        <div className="row row-cols-1 row-cols-md-3 g-4 " >
           {currentProducts.length > 0 ? (
             currentProducts.map((productInfo) => (
               <div className=" col z-3 " key={productInfo.id}>

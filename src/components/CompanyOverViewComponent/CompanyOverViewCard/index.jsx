@@ -15,10 +15,10 @@ const CompanyOverViewCard = ({ iconImage, title, description }) => {
             alt={title}
           />
           <div
-            class={`${style.serviceSmallCircle} ${style.serviceCircle} rounded-circle   d-inline-block position-absolute`}
+            className={`${style.serviceSmallCircle} ${style.serviceCircle} rounded-circle   d-inline-block position-absolute`}
           ></div>
           <div
-            class={`${style.serviceLargeCircle} ${style.serviceCircle}  rounded-circle   d-inline-block position-absolute`}
+            className={`${style.serviceLargeCircle} ${style.serviceCircle}  rounded-circle   d-inline-block position-absolute`}
           ></div>
         </div>
         <div className="col-md-10 ">

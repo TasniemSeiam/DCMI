@@ -11,7 +11,7 @@ export const FunFactArea = () => {
   const [counters, setCounters] = useState(data.map(() => 0));
 
   useEffect(() => {
-    const duration = 2000; // Duration of the animation in milliseconds
+    const duration = 6500; // Duration of the animation in milliseconds
     const incrementInterval = 50; // Time between increments in milliseconds
 
     data.forEach((item, index) => {
@@ -35,7 +35,7 @@ export const FunFactArea = () => {
 
   return (
     <div
-      className={`${style.funFactArea} fun-fact-bg overflow-hidden  py-5 my-5 `} data-aos="fade-up" data-aos-duration="1800"
+      className={`${style.funFactArea} fun-fact-bg overflow-hidden  py-5 my-5 `} data-aos="fade-up" data-aos-duration="800"
     >
       <div className="py-5">
         <div className="row justify-content-center align-items-center">

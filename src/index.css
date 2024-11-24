@@ -14,7 +14,8 @@
   -moz-osx-font-smoothing: grayscale;
   /*my color pallet*/
   --primary-color: #98c949;
-  --gray-color: #2e2e37;
+  --gray-color: #2E2E37;
+  --lightGray-color: #70707C;
 }
 section{
   overflow: hidden ;
