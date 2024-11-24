@@ -3,9 +3,41 @@
 }
 .cardBody h5{
    font-weight: 600;
-   font-size: 3.5rem;
+   font-size: 2.5rem;
 }
 .cardBody p{
    font-size: 1.5rem;
    color: #585858;
+}
+
+/**responsive**/
+
+@media screen and (max-width: 920px) {
+  .cardBody h5 {
+    font-size: 2.2rem;
+  }
+  .cardBody p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .cardBody h5 {
+    font-size: 2rem;
+  }
+  .cardBody p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBody h5 {
+    font-size: 1.5rem;
+  }
+  .cardBody p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
 }

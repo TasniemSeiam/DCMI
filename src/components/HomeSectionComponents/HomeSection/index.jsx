@@ -3,13 +3,8 @@ import { Link } from "react-scroll";
 
 import { Link as LinkTo } from "react-router-dom";
 import style from "./style.module.css";
+import { social } from "../../../data/social";
 
-const social = [
-  { icon: "fab fa-facebook-f", path: "facebook.com" },
-  { icon: "fab fa-twitter", path: "twitter.com" },
-  { icon: "fab fa-linkedin-in", path: "linkedin.com" },
-  { icon: "fab fa-youtube", path: "youtube.com" },
-];
 
 const HomeSection = () => {
   return (

@@ -1,16 +1,16 @@
-export const categoriesTitle = [
+export const categoriesData = [
     {
-      imageSrc: "/images/categories/baner33.png",
+      imageSrc: "/images/categories/allProducts.jpg",
       title: "All Products",
       pagePath: "all-products",
     },
     {
-      imageSrc: "/images/categories/vacuumTubes.png",
+      imageSrc: "/images/categories/tubes.jpg",
       title: "Vacuum Tubes",
       pagePath: "vacuum-tubes",
     },
     {
-      imageSrc: "/images/categories/rapidTest.png",
+      imageSrc: "/images/categories/rapidTest.jpg",
       title: "Rapid Test",
       pagePath: "rapid-test",
     },
@@ -20,7 +20,7 @@ export const categoriesTitle = [
       pagePath: "hematology-reagents",
     },
     {
-      imageSrc: "/images/categories/tubes.jpg",
+      imageSrc: "/images/categories/medicalDevice.jpg",
       title: "Medical Devices",
       pagePath: "medical-devices",
     },

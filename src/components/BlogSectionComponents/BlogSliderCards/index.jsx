@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import style from "./style.module.css";
 const BlogSliderCard = (props) => {
   return (
@@ -9,33 +7,19 @@ const BlogSliderCard = (props) => {
           <img
             className={`  ${style.imgs}  w-100 img-fluid `}
             src={props.imageSrc}
-            alt={props.title}
+            alt={props.shortDescription}
           />
         </div>
         <div
           className={`${style.singleBlogContent}  bg-white  py-2 rounded-bottom`}
         >
           <div className={`${style.blogContent}`}>
-            <ul className="blog-meta pt-2">
-              <li className="me-3 d-inline-block">
+            <ul className="blog-meta pt-2 d-flex justify-content-end ">
+              <li className="me-3 d-inline-block  ">
                 <span className="theme-color d-inline-block me-2">
-                  <i className="fas fa-folder"></i>
+                  <i className="fas fa-calendar "></i>
                 </span>
-                <span className=" d-inline-block">Web Design</span>
-              </li>
-              <li className="me-3 d-inline-block">
-                <span className="theme-color d-inline-block me-2">
-                  <i className="fas fa-user"></i>
-                </span>
-                <Link className={`${style.link}   d-inline-block`} to="#">
-                  Admin
-                </Link>
-              </li>
-              <li className="me-3 d-inline-block">
-                <span className="theme-color d-inline-block me-2">
-                  <i className="fas fa-comment"></i>
-                </span>
-                <span className=" d-inline-block">22</span>
+                <span className=" d-inline-block">{props.date }</span>
               </li>
             </ul>
             <h6 className="px-3 py-2 ">
@@ -45,7 +29,7 @@ const BlogSliderCard = (props) => {
                 data-bs-target="#staticBackdrop"
                 onClick={props.onClick} // Open modal on click
               >
-                {props.who}
+                {props.shortDescription}
               </p>
             </h6>
           </div>

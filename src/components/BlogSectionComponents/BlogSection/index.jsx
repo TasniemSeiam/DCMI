@@ -79,8 +79,9 @@ const BlogSection = () => {
             <BlogSliderCard
               key={index}
               imageSrc={blog.img}
-              who={blog.who}
-              description={blog.description}
+              shortDescription={blog.shortDescription}
+              longDescription={blog.longDescription}
+              date={blog.date}
               onClick={() => handleBlogClick(blog)} // Pass blog data to modal
             />
           ))}
@@ -91,9 +92,10 @@ const BlogSection = () => {
       
        {( <ModalBlog
           id="staticBackdrop"
-          title={selectedBlog?.title}
-          description={selectedBlog?.description}
+          shortDescription={selectedBlog?.shortDescription}
+          longDescription={selectedBlog?.longDescription}
           imgSrc={selectedBlog?.img}
+          date={selectedBlog?.date}
         />)}
     
     </section>

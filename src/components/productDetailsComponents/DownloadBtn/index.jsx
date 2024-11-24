@@ -1,4 +1,3 @@
-import React from "react";
 import { saveAs } from "file-saver";
 const DownloadButton = ({ pathPdf, namePdf }) => {
   const handleDownload = () => {
@@ -12,7 +11,7 @@ const DownloadButton = ({ pathPdf, namePdf }) => {
       <button
         className="btn"
         onClick={handleDownload}
-        disabled={!pathPdf} // Disable button if pathPdf is not provided
+        hidden={!pathPdf} // Hide button if pathPdf is not provided
         style={{
           backgroundColor: !pathPdf ? "#ccc" : "",
           cursor: !pathPdf ? "not-allowed" : "pointer",

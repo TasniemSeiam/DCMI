@@ -1,4 +1,4 @@
-import { categoriesTitle } from "../../../data/categoriesTitles";
+import { categoriesData } from "../../../data/categoriesData";
 import Category from "../Category";
 import HeadersOfPage from "../../HeadersOfPage";
 import style from "./style.module.css";
@@ -13,7 +13,7 @@ const ProductsCategories = () => {
         <HeadersOfPage header2="Our Product" header4="DCMI" />
         <div className=" px-4">
           <div className="row justify-content-center px-4 align-content-center g-4 ">
-            {categoriesTitle.map((category, inx) => (
+            {categoriesData.map((category, inx) => (
               <div className=" col-sm-6 col-lg-4  z-3 " key={inx}>
                 <Category
                   imageSrc={category.imageSrc}

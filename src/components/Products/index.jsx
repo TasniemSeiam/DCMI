@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Products = ({ header2, header4, products }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 6;
+  const productsPerPage = 9;
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = products.slice(
@@ -43,12 +43,12 @@ const Products = ({ header2, header4, products }) => {
                   id={productInfo.id}
                   title={productInfo.title}
                   imageSrc={productInfo.imageSrc}
-                  description={productInfo.description}
+                  shortDescription={productInfo.shortDescription}
                 />
               </div>
             ))
           ) : (
-            <div className={`${style.notFound} w-100 text-danger`}>
+            <div className={`${style.notFound} w-100 text-warning`}>
               <h2>Products Not Found</h2>
             </div>
           )}

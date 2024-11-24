@@ -1,14 +1,8 @@
 import { Link } from "react-router-dom";
 import style from "./style.module.css";
 import NewSletterForm from "../NewSletterForm";
+import { social } from "../../data/social";
 
-
-const social = [
-  { icon: "fab fa-facebook-f", path: "facebook.com",backgroundColor: "#1877f2"},
-  { icon: "fab fa-twitter", path: "twitter.com",backgroundColor: "#1da1f2"},
-  { icon: "fab fa-linkedin-in", path: "linkedin.com",backgroundColor: "#0077b5" },
-  { icon: "fab fa-instagram", path: "instagram.com",backgroundColor:"#405de6" },
-];
 
 const Footer = () => {
   return (
@@ -26,7 +20,10 @@ const Footer = () => {
                 <div className={`${style.copyRight}`}>
                   <p className="mb-0  text-secondary">
                     All right reserved &copy;
-                    <Link to="https://www.deltacaremi.com/" className="ms-1 text-black fw-bold ">
+                    <Link
+                      to="https://www.deltacaremi.com/"
+                      className="ms-1 text-black fw-bold "
+                    >
                       DCMI
                     </Link>
                   </p>
@@ -40,25 +37,26 @@ const Footer = () => {
                   <ul className="d-flex p-0 ">
                     {social.map((social, inx) => (
                       <li className=" d-block text-center pe-1 " key={inx}>
-                        <Link
-                          to={social.path}
-                          className=" text-white  "
-                        >
-                          <span className=" d-inline-block text-center p-2" style={{backgroundColor:social.backgroundColor}} >
+                        <Link to={social.path} className=" text-white  ">
+                          <span
+                            className=" d-inline-block text-center p-2"
+                            style={{ backgroundColor: social.backgroundColor }}
+                          >
                             <i className={social.icon}></i>
                           </span>
                         </Link>
                       </li>
                     ))}
                   </ul>
-                </div>{/*social */}
+                </div>
+                {/*social */}
               </div>
             </div>
             <div className="col-xl-3  col-lg-4  col-md-10  col-sm-12 col-12 order-1 order-sm-2 order-lg-1 ">
               <div className={`${style.footerWidget} pb-4`}>
                 <h5 className="py-2">Newsletter</h5>
                 <div className="newsletter-form">
-                  <NewSletterForm/>
+                  <NewSletterForm />
                 </div>
               </div>
             </div>

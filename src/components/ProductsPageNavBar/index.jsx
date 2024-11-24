@@ -3,12 +3,21 @@ import style from "./style.module.css";
 
 const ProductsPageNavBar = ({ currentPage }) => {
   return (
-    <div className={`${style.bar} w-100 px-5 py-4  `}>
-      <Link className={`${style.home} text-white `} to="/">
-        <span >Home</span>
-      </Link>{" "}
-      / <span>{currentPage}</span>
-    </div>
+    <nav className={`${style.nav}`}>
+      <div
+        className={`${style.navbar} navbar w-100 px-5 py-4  d-flex justify-content-between `}
+      >
+        <Link className="navbar-brand" to="/">
+          <img src="/images/logo/logo-w.png" alt="HIBRO" />
+        </Link>
+        <div>
+          <Link className={`${style.home} text-white z-3 `} to="/">
+            <span>Home</span>
+          </Link>{" "}
+          / <span>{currentPage}</span>
+        </div>
+      </div>
+    </nav>
   );
 };
 
