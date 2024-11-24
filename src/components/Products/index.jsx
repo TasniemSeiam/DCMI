@@ -48,7 +48,7 @@ const Products = ({ header2, header4, products }) => {
               </div>
             ))
           ) : (
-            <div className={`${style.notFound} w-100 text-warning`}>
+            <div className={`${style.notFound} w-100 text-danger`}>
               <h2>Products Not Found</h2>
             </div>
           )}
