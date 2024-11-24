@@ -10,12 +10,12 @@ import ConsumablesPage from "../pages/ConsumablesPage";
 import ProductRapidTestDetailsPage from "../pages/ProductRapidTestDetailsPage";
 import ProductVacuumTubesDetailsPage from "../pages/ProductVacuumTubesDetailsPage";
 import Footer from "../components/Footer";
-import ProductConsumablestDetailsPage from "../pages/ProductConsumablestDetailsPage";
 import ProductMedicalDeviceDetailsPage from "../pages/ProductMedicalDeviceDetailsPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import TopBtn from "../components/TopBtn";
+import ProductConsumablesDetailsPage from "../pages/ProductConsumablesDetailsPage";
 const AppRouters = () => {
   useEffect(() => {
     AOS.init({
@@ -46,7 +46,7 @@ const AppRouters = () => {
         />
         <Route
           path="/consumables/:id"
-          element={<ProductConsumablestDetailsPage />}
+          element={<ProductConsumablesDetailsPage />}
         />
         <Route
           path="/medical-devices/:id"

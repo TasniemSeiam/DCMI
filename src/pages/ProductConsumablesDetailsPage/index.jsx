@@ -1,10 +1,10 @@
 import { ConsumablesInfo } from "../../data/consumables";
 import ProductDetailsPage from "../ProductDetailsPage";
 
-const ProductConsumablestDetailsPage = () => {
+const ProductConsumablesDetailsPage = () => {
   return (
     <ProductDetailsPage data={ConsumablesInfo} />
   );
 }
 
-export default ProductConsumablestDetailsPage;
+export default ProductConsumablesDetailsPage;

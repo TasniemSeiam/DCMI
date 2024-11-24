@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import style from "./style.module.css";
 const tags = ["Web Design", "Social Media", "Recent Blog"];
@@ -65,7 +64,7 @@ const ModalBlog = ({ id, title, imgSrc, description }) => {
               <li className="me-3 d-inline-block">
                 <Link className={`${style.link}   d-inline-block`} to="#">
                   <span className=" d-inline-block me-2">
-                  <i class="fa-solid fa-folder-open"></i>
+                  <i className="fa-solid fa-folder-open"></i>
                   </span>
                   Web Design
                 </Link>

@@ -1,4 +1,3 @@
-import React from "react";
 import HeadersOfPage from "../../HeadersOfPage";
 import style from "./style.module.css";
 import ContactForm from "../ContactForm";

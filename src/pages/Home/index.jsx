@@ -4,7 +4,7 @@ import ContactUs from "../../components/contactSectionComponent/ContactUsSection
 import { FunFactArea } from "../../components/funFactArea";
 import HomeSection from "../../components/HomeSectionComponents/HomeSection";
 import NavBar from "../../components/NavBar";
-import ProductsCategories from "../../components/CategoriesSectionComponents/ProductsCtegoriesSection";
+import ProductsCategories from "../../components/CategoriesSectionComponents/ProductsCategoriesSection";
 import BlogSection from "../../components/BlogSectionComponents/BlogSection";
 
 const Home = () => {

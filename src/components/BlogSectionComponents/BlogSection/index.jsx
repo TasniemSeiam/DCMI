@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import  { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -43,13 +43,14 @@ const BlogSection = () => {
 
   return (
     <section
-      className={`${style.blog} py-5 overflow-visible position-relative container-fluid`}
-      data-aos="fade-up"
-      data-aos-duration="1500"
-      data-aos-delay="300"  
+      className={`${style.blog} py-5 overflow-visible position-relative container-fluid`}  
       id="blog"
     >
-      <div className="z-3 px-5 py-5 position-relative ">
+      <div className="z-3 px-5 py-5 position-relative "
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-delay="300"
+      >
         <HeadersOfPage header2="Recent Blog" header4="Get Updates" />
 
         {/* Slider Controls */}
